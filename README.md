@@ -12,7 +12,7 @@
 
 ## 🌐 線上展示
 
-網站連結：`https://你的用戶名.github.io/green-field-mall`
+網站連結：`https://FunFunFunChen.github.io/green-field-mall`
 
 ## 🛠️ 技術特色
 
