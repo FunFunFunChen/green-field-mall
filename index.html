@@ -731,85 +731,220 @@
     <script>
         // 商品資料存儲
         let products = [
-            // 保健食品
+            // 保健食品-小潘嚴選真實商品
             {
                 id: 1,
-                name: "天然維他命C膠囊",
-                description: "純天然萃取，增強免疫力，每日一粒守護健康",
-                price: 580,
-                stock: 100,
-                category: "health",
-                icon: "💊"
-            },
-            {
-                id: 2,
-                name: "深海魚油軟膠囊",
-                description: "富含Omega-3，保護心血管健康，DHA含量豐富",
-                price: 890,
-                stock: 80,
+                name: "魚膠原蛋白胜肽 500g",
+                description: "小潘推薦！高純度魚膠原蛋白，幫助肌膚彈性與運動後修復",
+                price: 800,
+                stock: 50,
                 category: "health",
                 icon: "🐟"
             },
             {
-                id: 3,
-                name: "益生菌膠囊",
-                description: "12種活性益生菌，調整腸道菌相，促進消化健康",
-                price: 750,
-                stock: 60,
+                id: 2,
+                name: "維他命C-500mg",
+                description: "高劑量維他命C，增強免疫力，運動員必備補給品",
+                price: 350,
+                stock: 100,
                 category: "health",
-                icon: "🦠"
+                icon: "🍊"
             },
-
-            // 農業產品
+            {
+                id: 3,
+                name: "維他命C-100mg",
+                description: "日常保健首選，溫和不刺激，適合長期補充",
+                price: 330,
+                stock: 80,
+                category: "health",
+                icon: "💊"
+            },
             {
                 id: 4,
-                name: "有機台東池上米",
-                description: "無農藥栽培，粒粒飽滿香甜，來自花東縱谷的黃金米",
-                price: 350,
-                stock: 200,
-                category: "agriculture",
-                icon: "🌾"
+                name: "無糖利多喜 500粒",
+                description: "小潘愛用！無糖配方，運動後快速補充能量",
+                price: 660,
+                stock: 60,
+                category: "health",
+                icon: "⚡"
             },
             {
                 id: 5,
-                name: "高山高麗菜",
-                description: "海拔1500公尺高山種植，清脆甜美，富含維生素",
-                price: 120,
-                stock: 50,
-                category: "agriculture",
-                icon: "🥬"
+                name: "聖潔莓錠-特品",
+                description: "女性專用保健品，平衡生理機能，運動女孩必備",
+                price: 350,
+                stock: 40,
+                category: "health",
+                icon: "🌸"
             },
             {
                 id: 6,
-                name: "阿里山烏龍茶",
-                description: "手工採摘，傳統工藝製作，回甘甘甜，茶香悠長",
-                price: 680,
-                stock: 30,
+                name: "必達E 500粒",
+                description: "維生素E補充，抗氧化好幫手，保護運動後肌肉",
+                price: 700,
+                stock: 45,
+                category: "health",
+                icon: "💪"
+            },
+            {
+                id: 7,
+                name: "綜合維他命B群+鋅",
+                description: "提升運動表現！B群+鋅雙效配方，增強體力與專注力",
+                price: 450,
+                stock: 70,
+                category: "health",
+                icon: "⚡"
+            },
+            {
+                id: 8,
+                name: "綜合維他命B群+鐵",
+                description: "補鐵配方，改善疲勞，適合長跑訓練後補充",
+                price: 450,
+                stock: 65,
+                category: "health",
+                icon: "🏃‍♂️"
+            },
+            {
+                id: 9,
+                name: "綜合維他命B群膜衣錠",
+                description: "膜衣錠好吞嚥，日常能量補充，小潘每日必吃",
+                price: 400,
+                stock: 90,
+                category: "health",
+                icon: "💯"
+            },
+            {
+                id: 10,
+                name: "EX PLUS糖衣錠",
+                description: "升級配方！全方位營養補充，挑戰極限的秘密武器",
+                price: 570,
+                stock: 55,
+                category: "health",
+                icon: "🔥"
+            },
+            {
+                id: 11,
+                name: "苷寶良Tri-GOFO植萃膠囊 60粒",
+                description: "頂級植萃配方，小潘嚴選高端保健品，品質保證",
+                price: 2400,
+                stock: 20,
+                category: "health",
+                icon: "🌿"
+            },
+            {
+                id: 12,
+                name: "苷寶良Tri-GOFO植萃膠囊 120粒",
+                description: "大容量裝！頂級植萃配方，長期保健最佳選擇",
+                price: 4700,
+                stock: 15,
+                category: "health",
+                icon: "🌟"
+            },
+            {
+                id: 13,
+                name: "膠原蛋白 300g",
+                description: "小包裝試用裝，美容保健雙效，運動後肌膚修復",
+                price: 600,
+                stock: 40,
+                category: "health",
+                icon: "✨"
+            },
+            {
+                id: 14,
+                name: "膠原蛋白 1KG",
+                description: "超值大包裝！家庭號首選，長期使用更經濟",
+                price: 1100,
+                stock: 25,
+                category: "health",
+                icon: "💎"
+            },
+            {
+                id: 15,
+                name: "寶維康原味藍藻",
+                description: "天然藍藻營養，小潘推薦的超級食物，運動營養補給",
+                price: 700,
+                stock: 35,
+                category: "health",
+                icon: "🌊"
+            },
+            {
+                id: 16,
+                name: "寶維康原加鈣藍藻",
+                description: "藍藻+鈣質雙效配方，強化骨骼，適合高強度訓練",
+                price: 700,
+                stock: 35,
+                category: "health",
+                icon: "🦴"
+            },
+            {
+                id: 17,
+                name: "維生素D3+鋅",
+                description: "免疫雙寶組合！D3+鋅增強抵抗力，戶外運動必備",
+                price: 400,
+                stock: 60,
+                category: "health",
+                icon: "☀️"
+            },
+
+            // 農業產品- 小潘嚴選在地農產
+            {
+                id: 18,
+                name: "雲林在地苦瓜",
+                description: "小潘家鄉雲林直送！天然無毒栽培，清熱解毒，夏日運動後最佳補給",
+                price: 120,
+                stock: 80,
                 category: "agriculture",
-                icon: "🍃"
+                icon: "🥒"
+            },
+            {
+                id: 19,
+                name: "雲林在地小黃瓜",
+                description: "雲林農場新鮮直採！脆嫩多汁，富含維生素，健身減脂好夥伴",
+                price: 80,
+                stock: 100,
+                category: "agriculture",
+                icon: "🥒"
+            },
+            {
+                id: 20,
+                name: "雲林在地蒜頭",
+                description: "雲林優質蒜頭！辛香濃郁，天然抗菌，提升免疫力的超級食材",
+                price: 150,
+                stock: 60,
+                category: "agriculture",
+                icon: "🧄"
+            },
+            {
+                id: 21,
+                name: "新社橘子",
+                description: "台中新社香甜橘子！維生素C豐富，運動後補充最天然的能量來源",
+                price: 200,
+                stock: 70,
+                category: "agriculture",
+                icon: "🍊"
             },
 
             // 應援衣服
             {
-                id: 7,
-                name: "台灣棒球應援T恤",
-                description: "100%純棉材質，舒適透氣，為台灣隊加油必備",
-                price: 450,
+                id: 22,
+                name: "雲林女籃全運應援T恤(短袖)",
+                description: "排汗材質，舒適透氣，為雲林女籃加油必備",
+                price: 680,
                 stock: 150,
                 category: "support",
                 icon: "⚾"
             },
             {
-                id: 8,
-                name: "演唱會應援螢光棒",
-                description: "多色變換LED燈，演唱會必備神器，與偶像同步閃耀",
-                price: 280,
+                id: 23,
+                name: "雲林女籃全運應援T恤(長袖)",
+                description:"排汗材質，舒適透氣，為雲林女籃加油必備",
+                price: 980,
                 stock: 200,
                 category: "support",
                 icon: "✨"
             },
             {
-                id: 9,
+                id: 24,
                 name: "客製化應援毛巾",
                 description: "可印製專屬文字圖案，吸汗透氣，展現個人風格",
                 price: 180,
@@ -821,7 +956,7 @@
 
         // 系統變數
         let cart = [];
-        let productIdCounter = 10;
+        let productIdCounter = 24;
         let currentUser = null;
         let users = [];
         let orders = [];
